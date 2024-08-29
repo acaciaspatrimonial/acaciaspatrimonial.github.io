@@ -1,0 +1,135 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding-left: 2vw;
+    position: fixed;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.develop {
+    position: relative;
+    align-items: center;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ul-second > li {
+    width: 110px;
+    transform: translateX(-20px);
+    text-align: center;
+}
+.abajo .ul-second > li {
+    background-color: white;
+    z-index: 20;
+}
+.ul-second > li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .ENSA {
+        display: none;
+    }
+}
+.ref, .ref1{
+    text-decoration: none;
+    color: white;
+}
+.ensanm {
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 500px;
+    display: flex;
+    margin-top: 0px;
+    font-size: 50px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    align-items: start;
+}
+.a {
+    background-image: url(/img/a.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.ENSA{
+    font-size: 20px;
+    justify-content: left;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.abajo  .ref, .abajo .ENSA{
+    color: black;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.abajo {
+    background-color: white;
+}
+.r {
+    clip-path: polygon(100% 0, 50% 100%, 0 0, 20% 0, 50% 60%, 80% 0);
+    background-color: white;
+    text-align: end;
+    display: table-caption;
+    font-size: 10px;
+    transition-duration: 0.2s;
+    color: transparent;
+}
+.develop:hover .r {
+    clip-path: polygon(100% 100%, 80% 100%, 50% 40%, 20% 100%, 0 100%, 50% 0);
+    background-color: white;
+    text-align: end;
+    display: table-caption;
+    font-size: 10px;
+    transition-duration: 0.2s;
+    color: transparent;
+}
+.abajo .r {
+    clip-path: polygon(100% 0, 50% 100%, 0 0, 20% 0, 50% 60%, 80% 0);
+    background-color: black;
+    text-align: end;
+    display: table-caption;
+    font-size: 10px;
+    transition-duration: 0.2s;
+    color: transparent;
+}
+.abajo .develop:hover .r {
+    clip-path: polygon(100% 100%, 80% 100%, 50% 40%, 20% 100%, 0 100%, 50% 0);
+    background-color: black;
+    text-align: end;
+    display: table-caption;
+    font-size: 10px;
+    transition-duration: 0.2s;
+    color: transparent;
+}
