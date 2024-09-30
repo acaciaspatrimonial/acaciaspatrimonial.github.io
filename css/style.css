@@ -7,7 +7,6 @@
 
 body {
     height: 100vh;
-    background-color: #a9aaac;
-    color: #fff;
     min-height: 1500px;
+    background-color: rgb(192, 192, 192);
 }
